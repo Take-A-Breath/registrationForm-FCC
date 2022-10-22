@@ -22,10 +22,29 @@
                 <input type="radio" name="account-type" id="business-account"> Business Acccount
             </label>
             <label for="terms-and-conditions">
-                <input type="checkbox" id="terms-and-conditions" required> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a> 
+                <input type="checkbox" name="terms" id="terms-and-conditions" required> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a> 
             </label>
         </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+            <label for="profile-picture">
+                Upload a profile picture: <input type="file" name="file" id="profile-picture">
+            </label>
+            <label for="age">
+                Input your age (years): <input type="number" name="age" min=13 max=120 id="age">
+            </label>
+            <label for="referrer">How did you hear about us?
+              <select id="referrer">
+                  <option value="">(select one)</option>
+                  <option value="1">freeCodeCamp News</option>
+                  <option value="2">freeCodeCamp YouTube Channel</option>
+                  <option value="3">freeCodeCamp Forum</option>
+                  <option value="4">Other</option>
+              </select>
+            </label>
+            <label for="bio">Provide a bio:
+                <textarea rows="3" cols="30" mame="provideBio" id="bio" name="bio" placeholder="I like coding on the beach...."></textarea>
+            </label>
+        </fieldset>
         <input type="submit" value="Submit">
       </form>
     </body>
